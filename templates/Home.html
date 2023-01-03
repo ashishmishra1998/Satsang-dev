@@ -1,0 +1,204 @@
+{% load static %}
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>YogShaakti</title>
+  <style>
+    .home {
+      background-color: #DEE1E5;
+    }
+  </style>
+</head>
+
+<body class="home">
+  <div id="header">
+    <img id="img_h" src="{% static 'assets/images/logo.png' %}" alt="Loading..">
+    <div class="header_menu">
+      <h3 id="home"><a href="{% url 'home' %}">Home</a></h3>
+      <h3 id="video"><a href="{% url 'yoga_videos' %}">Videos</a></h3>
+      <h3 id="post"><a href="{% url 'yoga_post' %}">Posts</a></h3>
+      <h3 id="gallery"><a href="{% url 'yoga_gallery' %}">Gallery</a></h3>
+      <h3 id="review"><a href="{% url 'yoga_review' %}">Reviews</a></h3>
+      <h3 id="about"><a href="{% url 'about_us' %}">About</a></h3>
+    </div>
+
+  </div>
+
+  <div id="block2">
+    <div class="banner_wrp">
+      <div class="banner_details">
+        <h1 id="text1">Shree Krushna Krupa Satsang</h1>
+        <h4 id="text2">One of the largest virtual satsangs</h4>
+        <a href="https://www.facebook.com/SejalShahVirmani"><button type="button" id="btn"><b id="btnText">Satsang</b></button></a>
+      </div>
+      <div class="banner_image">
+        <img id="img2" src="{% static 'assets/images/Group_1.png' %}" alt="Loading..">
+      </div>
+    </div>
+  </div>
+
+  <img src="{% static 'assets/images/banner_image.png' %}" alt="Loading.." id="img3">
+  <h1 id="text3">Virtual Satsangs</h1>
+  <h3 id="text4">Shree Krushna is considered tobe a bero, role model,
+    teacher, philosopher and true friend who is seen as the
+    Sod of Joy. Compassion, tenderness and unconditional love.</h3>
+
+  <div id="block3">
+    <h1 id="text5">Gallery</h1>
+    <div id="innerblock">
+      <img id="inimg1" src="{% static 'assets/images/img_1.jpg' %}" alt="Loading..">
+      <img id="inimg2" src="{% static 'assets/images/img_4.jpg' %}" alt="Loading..">
+      <img id="inimg3" src="{% static 'assets/images/img_3.jpg' %}" alt="Loading..">
+      <img id="inimg4" src="{% static 'assets/images/img_2.jpg' %}" alt="Loading..">
+      <img id="inimg5" src="{% static 'assets/images/img_5.jpg' %}" alt="Loading..">
+      <img id="inimg6" src="{% static 'assets/images/img_6.jpg' %}" alt="Loading..">
+      <img id="inimg7" src="{% static 'assets/images/img_7.jpg' %}" alt="Loading..">
+      <img id="inimg7" src="{% static 'assets/images/img_8.jpg' %}" alt="Loading..">
+      <img id="inimg7" src="{% static 'assets/images/img_9.jpg' %}" alt="Loading..">
+      <img id="inimg7" src="{% static 'assets/images/img_10.jpg' %}" alt="Loading..">
+    </div>
+  </div>
+  <div>
+    <h1 id="text6">Customer Reviews</h1>
+    <div class=" owl-carousel owl-theme">
+      <div id="inblock1" class="reviewBlog">
+        <p>I would appreciate it very and will send you Nyochhawar too... as you are doing a great Sewa Karya which is
+          commendable.. these days you can't find people with this great attitude.<br><br><b>- Jyoti Shah</b></p>
+      </div>
+      <div id="inblock2" class="reviewBlog">
+        <p>I appreciate, you are a wonderful Guru. I have learned quite a few asanas and still have to work on
+          perfecting some. My sincere gratitude to guru Sejal for tremendous effort and generosity with your time
+          .<br><br><b>- Harsha sheth</b></p>
+      </div>
+      <div id="inblock3" class="reviewBlog">
+        <p>I am attending Yog Shakti from last few years our yoga Guru Mrs. Sejal Shah Virmani is a very dedicated,
+          knowledgeable & very Helping person in a short sheis a unique creation of human beyond my
+          imagination.<br><br><b>- Niru Purohit</b></P>
+      </div>
+      <div id="inblock4" class="reviewBlog">
+        <p>Hello Sejal, One of our friends was interested in joining. I have shared your link with them. Their names are
+          Yashwant Parekh and Padma Parekh.<br><br><b>- Saryu Shukla</b></p>
+      </div>
+    </div>
+  </div>
+  <div id="block4" class="container">
+    <div id="innerblock2" class="row">
+      <div class="col-lg-6">
+        <form class='donet_form'>
+          <div class="donet_form_main">
+            <div class="donet_form_box">
+              <input type="text" id="input1" placeholder="Enter Your Name" required></input>
+              <input type="email" id="input3" placeholder="Enter Your Email" required></input>
+              <textarea type="text" id="input5" rows="5" placeholder="Enter Your Address" required></textarea>
+              <button type="reset" id="cancle_btn"  >
+                <p id="text8">CANCLE</p>
+                <p id="text9"><img id="cross" src="{% static 'assets/images/x-button.png' %}" alt="Loading.."></p>
+              </button>
+            </div>
+            <div class="donet_form_box">
+              <input type="number" id="input2" placeholder="Enter Your Phone Number" required></input>
+              <div class='donet_price'>
+                <img id="dollar" src="{% static 'assets/images/dollar.png' %}" alt="Loading..">
+                <input type="number" id="input4" min="0" max="200" placeholder="0" required></input>
+              </div>
+
+              <textarea type="text" id="input6" rows="5" placeholder="your message/suggestion (if any)"></textarea>
+              <button type="submit" id="pay_now_btn">
+                <p id="text8">PAY NOW</p>
+                <p id="text9"><img id="cross" src="{% static 'assets/images/donation.png' %}" alt="Loading.."></p>
+              </button>
+            </div>
+            <!-- <p class='donet_button_group'>
+        
+      
+      </p> -->
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
+        <img src="{% static 'assets/images/pay_now_img.png' %}" alt="Loading..." id="img8">
+      </div>
+
+    </div>
+
+  </div>
+  <div id="footer">
+    <div class="footer_logo">
+      <img src="{% static 'assets/images/logo.png' %}" alt="Loading..." id="img_f">
+      <p id="text10">Mind, Body and Sprite!</p>
+      <p id="text10">Friday from 8:15 to 9:30 PM Estern, <br> 3:15 PM Pacific, <br>
+        7:15 PM Central USA Time</p>
+    </div>
+    <div class="footer_link"> 
+       
+      <p id="links">Links</p>
+      <div class="link_list">
+        <p id="Home_f"><a href="{% url 'home' %}">Home</a></p>
+        <p id="Video_f"><a href="{% url 'yoga_videos' %}">Videos</a></p>
+        <p id="post_f"><a href="{% url 'yoga_post' %}">Posts</a></p>
+        <p id="gallery_f"><a href="{% url 'yoga_gallery' %}">Gallery</a></p>
+        <p id="review_f"><a href="{% url 'yoga_review' %}">Reviews</a></p>
+        <p id="about_f"><a href="{% url 'about_us' %}">About</a></p>
+      </div>
+    </div>
+    <div class="footer_link">
+      <p id="links">Get in Touch</p>
+      <div class="link_list">
+        <p id="emailBox">
+          <a href="mailto:ekkgujugal@aol.com">
+          <img src="{% static 'assets/images/gmail.png' %}" alt="Loading..." id="emailus">
+          ekkgujugal@aol.com</a>
+        </p>
+        <p id="contactBox">
+          <img src="{% static 'assets/images/telephone.png' %}" alt="Loading..." id="emailus"> <a href="tel:+3012335001">3012335001</a></p>
+         
+      </div>
+    </div>  
+    <div class="footer_social_icon">
+      <p id="follow">Follow Us</p>
+      <a href="https://www.facebook.com/SejalShahVirmani"><img src="{% static 'assets/images/facebook.png' %}"
+          alt="Loading..." id="facebook"></a>
+      <a href="https://youtube.com/channel/UCSaQ0GrPfLjuqaG8Hnd5Z0Q"><img src="{% static 'assets/images/Youtube.png' %}"
+          alt="Loading..."></a>
+          <a href=""></a>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+</script>
+
+</html>

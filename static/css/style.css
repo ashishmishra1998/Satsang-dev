@@ -395,6 +395,7 @@ p#text10 {
     line-height: normal;
     font-size: 36px;
     margin-bottom: 30px;
+    margin-top: 36px;
     color: #2E4858;
 }
 
@@ -451,11 +452,12 @@ form.donet_form textarea {
     gap: 20px;
 }
 
-.home #innerblock>img {
+.home #innerblock .image-card img {
     width: 275px;
-    height: 200px;
+    height: 400px;
     opacity: 1;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 body.home #innerblock2 input {
@@ -703,18 +705,23 @@ body.review_page #tb1 p#text {
     margin: 0;
 }
 
+body.gallary{
+    background-color: #DEE1E5 !important;
+}
 body.gallary .gallery-images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 body.gallary .gallery-images img {
-    width: calc(16.66% - 70px);
-    margin: 0 35px 60px;
-    height: 15vw;
+    width: 100%;
+    height: 400px;
+    opacity: 1;
     object-fit: cover;
-    box-shadow: 3px 3px 12px #00000029;
-    border-radius: 14px;
+    border-radius: 10px;
+    min-width: 300px;
 }
 
 body.review_page #tb1 p#reviews {
@@ -725,12 +732,17 @@ body.review_page #tb1 p#reviews {
 }
 
 body.post-page {
-    background: #fff !important;
+    background: #DEE1E5 !important;
+}
+body.post-page .image-card img{
+    width: 100%;
+    height: 400px;
+    opacity: 1;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-body.gallary {
-    background: #fff !important;
-}
+ 
 
 .post_wrap {
     display: flex;
@@ -816,6 +828,12 @@ img#img8 {
 .contact-form-bg div#block3{
     position: relative;
 }
+.image-card {
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
 /* responcive */
 
 
@@ -840,7 +858,7 @@ img#img8 {
         margin-bottom: 25px !important;
     }
 
-    body.gallary .gallery-images img {
+    body.gallary .gallery-images .image-card img {
         margin: 0 15px 30px;
         width: calc(20% - 30px);
         height: 20vw;
@@ -894,7 +912,7 @@ img#img8 {
         height: 60vw;
     }
 
-    body.gallary .gallery-images img {
+    body.gallary .gallery-images .image-card img {
         margin: 0 15px 30px;
         width: calc(25% - 30px);
         height: 30vw;
@@ -908,7 +926,7 @@ img#img8 {
         font-size: 12px;
     }
 
-    .home #innerblock>img {
+    .home #innerblock .image-card img {
         width: 255px;
     }
 
@@ -945,12 +963,12 @@ img#img8 {
 }
 
 @media (max-width: 575px) {
-    .home #innerblock>img {
+    .home #innerblock .image-card img {
         width: 100%;
         height: 400px;
     }
 
-    body.gallary .gallery-images img {
+    body.gallary .gallery-images .image-card img {
         margin: 0 15px 30px;
         width: calc(50% - 30px);
         height: 50vw;

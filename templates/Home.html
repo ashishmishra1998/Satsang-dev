@@ -29,7 +29,7 @@
       <h3 id="video"><a href="{% url 'yoga_videos' %}">Videos</a></h3>
       <h3 id="post"><a href="{% url 'yoga_post' %}">Posts</a></h3>
       <h3 id="gallery"><a href="{% url 'yoga_gallery' %}">Gallery</a></h3>
-      <h3 id="review"><a href="{% url 'yoga_review' %}">Reviews</a></h3>
+      <h3 id="review"><a href="{% url 'yoga_review' %}">Suggestions</a></h3>
       <h3 id="about"><a href="{% url 'about_us' %}">About</a></h3>
     </div>
 
@@ -40,7 +40,8 @@
       <div class="banner_details">
         <h1 id="text1">Shree Krushna Krupa Satsang</h1>
         <h4 id="text2">One of the largest virtual satsangs</h4>
-        <a href="https://www.facebook.com/SejalShahVirmani"><button type="button" id="btn"><b id="btnText">Satsang</b></button></a>
+        <a href="https://www.facebook.com/SejalShahVirmani"><button type="button" id="btn"><b
+              id="btnText">Satsang</b></button></a>
       </div>
       <div class="banner_image">
         <img id="img2" src="{% static 'assets/images/Group_1.png' %}" alt="Loading..">
@@ -57,20 +58,22 @@
   <div id="block3">
     <h1 id="text5">Gallery</h1>
     <div id="innerblock">
-      <img id="inimg1" src="{% static 'assets/images/img_1.jpg' %}" alt="Loading..">
-      <img id="inimg2" src="{% static 'assets/images/img_4.jpg' %}" alt="Loading..">
-      <img id="inimg3" src="{% static 'assets/images/img_3.jpg' %}" alt="Loading..">
-      <img id="inimg4" src="{% static 'assets/images/img_2.jpg' %}" alt="Loading..">
-      <img id="inimg5" src="{% static 'assets/images/img_5.jpg' %}" alt="Loading..">
-      <img id="inimg6" src="{% static 'assets/images/img_6.jpg' %}" alt="Loading..">
-      <img id="inimg7" src="{% static 'assets/images/img_7.jpg' %}" alt="Loading..">
-      <img id="inimg7" src="{% static 'assets/images/img_8.jpg' %}" alt="Loading..">
-      <img id="inimg7" src="{% static 'assets/images/img_9.jpg' %}" alt="Loading..">
-      <img id="inimg7" src="{% static 'assets/images/img_10.jpg' %}" alt="Loading..">
+      <div class="image-card">
+        <img id="inimg1" src="{% static 'assets/images/img_1.jpg' %}" alt="Loading..">
+      </div>
+      <div class="image-card"><img id="inimg2" src="{% static 'assets/images/img_4.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg3" src="{% static 'assets/images/img_3.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg4" src="{% static 'assets/images/img_2.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg5" src="{% static 'assets/images/img_5.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg6" src="{% static 'assets/images/img_6.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg7" src="{% static 'assets/images/img_7.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg7" src="{% static 'assets/images/img_8.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg7" src="{% static 'assets/images/img_9.jpg' %}" alt="Loading.."></div>
+      <div class="image-card"><img id="inimg7" src="{% static 'assets/images/img_10.jpg' %}" alt="Loading.."></div>
     </div>
   </div>
   <div>
-    <h1 id="text6">Customer Reviews</h1>
+    <h1 id="text6">Customer Suggestions</h1>
     <div class=" owl-carousel owl-theme">
       <div id="inblock1" class="reviewBlog">
         <p>I would appreciate it very and will send you Nyochhawar too... as you are doing a great Sewa Karya which is
@@ -101,7 +104,7 @@
               <input type="text" id="input1" placeholder="Enter Your Name" required></input>
               <input type="email" id="input3" placeholder="Enter Your Email" required></input>
               <textarea type="text" id="input5" rows="5" placeholder="Enter Your Address" required></textarea>
-              <button type="reset" id="cancle_btn"  >
+              <button type="reset" id="cancle_btn">
                 <p id="text8">CANCLE</p>
                 <p id="text9"><img id="cross" src="{% static 'assets/images/x-button.png' %}" alt="Loading.."></p>
               </button>
@@ -140,15 +143,15 @@
       <p id="text10">Friday from 8:15 to 9:30 PM Estern, <br> 3:15 PM Pacific, <br>
         7:15 PM Central USA Time</p>
     </div>
-    <div class="footer_link"> 
-       
+    <div class="footer_link">
+
       <p id="links">Links</p>
       <div class="link_list">
         <p id="Home_f"><a href="{% url 'home' %}">Home</a></p>
         <p id="Video_f"><a href="{% url 'yoga_videos' %}">Videos</a></p>
         <p id="post_f"><a href="{% url 'yoga_post' %}">Posts</a></p>
         <p id="gallery_f"><a href="{% url 'yoga_gallery' %}">Gallery</a></p>
-        <p id="review_f"><a href="{% url 'yoga_review' %}">Reviews</a></p>
+        <p id="review_f"><a href="{% url 'yoga_review' %}">Suggestions</a></p>
         <p id="about_f"><a href="{% url 'about_us' %}">About</a></p>
       </div>
     </div>
@@ -157,21 +160,23 @@
       <div class="link_list">
         <p id="emailBox">
           <a href="mailto:ekkgujugal@aol.com">
-          <img src="{% static 'assets/images/gmail.png' %}" alt="Loading..." id="emailus">
-          ekkgujugal@aol.com</a>
+            <img src="{% static 'assets/images/gmail.png' %}" alt="Loading..." id="emailus">
+            ekkgujugal@aol.com</a>
         </p>
         <p id="contactBox">
-          <img src="{% static 'assets/images/telephone.png' %}" alt="Loading..." id="emailus"> <a href="tel:+3012335001">3012335001</a></p>
-         
+          <img src="{% static 'assets/images/telephone.png' %}" alt="Loading..." id="emailus"> <a
+            href="tel:+3012335001">3012335001</a>
+        </p>
+
       </div>
-    </div>  
+    </div>
     <div class="footer_social_icon">
       <p id="follow">Follow Us</p>
       <a href="https://www.facebook.com/SejalShahVirmani"><img src="{% static 'assets/images/facebook.png' %}"
           alt="Loading..." id="facebook"></a>
       <a href="https://youtube.com/channel/UCSaQ0GrPfLjuqaG8Hnd5Z0Q"><img src="{% static 'assets/images/Youtube.png' %}"
           alt="Loading..."></a>
-          <a href=""></a>
+      <a href=""></a>
     </div>
   </div>
 
